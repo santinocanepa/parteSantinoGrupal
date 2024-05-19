@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+body {
+    /* max-width: 100%; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('/imagenes, porductos/imagenFondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: darkblue;
+}
+
+.content {
+    min-height: 80px;
+    background: darkblue;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    background: darkblue;
+}
+.menu .navbar ul li a:hover {
+    color: chocolate;
+    background: darkblue;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.menu img {
+    height: 70px;
+    background-color: darkblue;
+    display: flex;
+}
+
+.porductos {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caja-producto {
+    height: 250px;
+    width: 250px;
+    border-radius: 60px;
+    transition: all .5s;
+}
+
+.porductos a .caja-producto:hover {
+    transform: scale(1.07);
+}
+
+.porductos a li {
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+@media only screen and (max-width:480px){
+
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    .menu-container{
+        display: flex;
+    }
+
+}
